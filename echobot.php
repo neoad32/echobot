@@ -1,5 +1,5 @@
 <?php
-$access_token='6n/gsaQycAUaTI/ndIv4XEgfdSZcgTtBeYPIp0PEZnQetc611uHjJlwDPqrPVC4MEoJNMbOirgQRifN6DqfsLQBo4Y8Fx+jTOHyL1b0n29DWIAr5sn7m/KLKFXptzFLfYHOFD/kiRNNp/IQUrqCouAdB04t89/1O/w1cDnyilFU=';	//ใส่ access token ของเรา
+$access_token='Jg8VkHLUeNtxDLCVaL9dHWP4CCTSGN0/2sU9TPsSZrP/NxrDu1FaH7SnumXvQ2MpH+Z57NqWWuSgn1aqudSOd5oDzUsRFTid7uam0GcP7lDGH6aZZh3PBAlMiy6HT5A0biCvZlC8Khre1aak/8DGfAdB04t89/1O/w1cDnyilFU=';	//ใส่ access token ของเรา
 
 $content = file_get_contents('php://input');	//รับค่าจากล่องข้อความใน line
 $events = json_decode($content, true);			//เปลี่ยน json ที่ line ส่งมา ให้เป็น array
