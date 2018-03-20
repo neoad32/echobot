@@ -5,7 +5,7 @@ $content = file_get_contents('php://input');	//รับค่าจากล่
 $events = json_decode($content, true);			//เปลี่ยน json ที่ line ส่งมา ให้เป็น array
 if (!is_null($events['events'])) {				//ตรวจสอบว่ามีข้อมูลส่งมาหรือไม่
 	foreach ($events['events'] as $event) {	
-		$replyToken=$events['replyToken'];		//Token สำหรับส่งข้อความกลับ
+		$replyToken=$event['replyToken'];		//Token สำหรับส่งข้อความกลับ
 		$text=$event['message']['text'];		//รับค่าข้อความที่ส่งเข้ามาในตัวแปร text
 		
 		//สร้างข้อความตอบกลับ
